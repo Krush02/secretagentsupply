@@ -6,6 +6,11 @@ div {
   display: block;
 }
 
+h1, h4 {
+  font-weight: bold;
+  display: block;
+}
+
 .flex-header {
   background-color: black;
   color: white;
@@ -18,6 +23,7 @@ div {
   display: flex;
   align-items: center;
   text-transform: uppercase;
+  margin-left: 10em;
 }
 
 .logo-header img {
@@ -33,16 +39,29 @@ div {
 .banner {
   background-image: url("../images/moto.jpeg");
   background-repeat: no-repeat;
-  background-position: center;
-  height: 25em;
+  background-position: center center;
+  background-size: cover;
+  height: 30em;
 }
 
-.banner-text {
+.banner-box {
+  max-width: 960px;
+  margin-left: 10em;
+  opacity: 0.9;
+}
+
+.banner-headline {
   position: relative;
   top: 10em;
+  width: 20em;
   padding: 2em 3em;
   background-color: black;
   color: white;
-  display: flex;
-  align-content: center;
+  text-transform: uppercase;
+}
+
+.banner-headline h1 {
+  font-size: 2em;
+  line-height: 1.2em;
+  margin: .75em 0px;
 }
