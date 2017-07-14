@@ -23,17 +23,17 @@ h1, h4 {
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  margin-left: 10em;
+  padding-left: 10vw;
 }
 
 .logo-header img {
-  height: 15%;
-  width: 15%;
+  height: 12%;
+  width: 12%;
 }
 
 .logo-header span {
   padding-left: 1em;
-  font-size: 1.25em;
+  font-size: 1.2em;
 }
 
 .banner {
@@ -45,9 +45,9 @@ h1, h4 {
 }
 
 .banner-box {
-  max-width: 960px;
-  margin-left: 10em;
-  opacity: 0.9;
+  padding-left: calc(100vw - 90%);
+  opacity: 0.8;
+  position: relative;
 }
 
 .banner-headline {
@@ -64,4 +64,43 @@ h1, h4 {
   font-size: 2em;
   line-height: 1.2em;
   margin: .75em 0px;
+}
+
+nav {
+  background-color: firebrick;
+  color: white;
+  display: block;
+}
+
+a, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2vh;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav-mobile {
+    display: flex;
+    justify-content: space-around;
+    padding: 2vh;
+  }
+
+  .nav-bar {
+    display: none;
+  }
 }
