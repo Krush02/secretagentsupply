@@ -1,3 +1,4 @@
+/* Some general styling */
 body {
   font-family: Helvetica, sans-serif;
   font-size: 18px;
@@ -12,6 +13,7 @@ h1, h4 {
   display: block;
 }
 
+/* header & logo styling */
 .flex-header {
   background-color: black;
   color: white;
@@ -36,6 +38,7 @@ h1, h4 {
   font-size: 1.2em;
 }
 
+/* This is the banner and headline styling */
 .banner {
   background-image: url("../images/moto.jpeg");
   background-repeat: no-repeat;
@@ -45,6 +48,7 @@ h1, h4 {
 }
 
 .banner-box {
+  display: flex;
   padding-left: 14vw;
   opacity: 0.9;
   position: relative;
@@ -67,6 +71,7 @@ h1, h4 {
   margin: .25rem 0px;
 }
 
+/* Nav bar starts here */
 nav {
   background-color: firebrick;
   color: white;
@@ -94,7 +99,39 @@ a:hover {
   display: none;
 }
 
+/* Smartphones ----------- */
+@media only screen and (max-width: 480px) {
+
+  .banner-box {
+    width: 100%;
+    line-height: 1.5em;
+    top: 10em;
+  }
+
+  .banner-headline {
+    width: 100%;
+  }
+
+  .banner-headline h1{
+    font-size: 1.1em;
+    margin-bottom: 0em;
+  }
+
+  .banner-headline h4 {
+    font-size: .85em;
+  }
+
+  .nav-mobile li {
+    display: none;
+  }
+}
+
+/* Media query for screens smaller than 1024px */
 @media only screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
   .nav-mobile {
     display: flex;
     justify-content: space-around;
@@ -104,8 +141,26 @@ a:hover {
   .nav-bar {
     display: none;
   }
+
+  .banner-box {
+    padding: 0px;
+  }
+
+  .glasses {
+    display: none;
+  }
+
+  .logo-header {
+    margin-left: 1vw;
+  }
+
+  .items {
+    margin: 3em 0vw;
+  }
+
 }
 
+/* Body content styling Flex*/
 .body-box {
     max-width: 98vw;
 }
@@ -121,7 +176,7 @@ a:hover {
 .item-img {
   display: flex;
   border: .25em solid black;
-  justify-content:flex-end;
+  justify-content:center;
   align-items: center;
   flex-direction: column;
   padding: 2rem 0px;
@@ -142,6 +197,7 @@ a:hover {
   padding: 1rem;
 }
 
+/* Location and hours of operation */
 .business-info {
   display: flex;
   justify-content: space-between;
@@ -159,6 +215,7 @@ a:hover {
   padding: 1em 2em;
 }
 
+/* Footy McFoot-Foot */
 footer {
   height: 10rem;
   margin-top: 4rem;
