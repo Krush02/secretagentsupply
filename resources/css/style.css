@@ -100,7 +100,7 @@ a:hover {
 }
 
 /* Smartphones ----------- */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 470px) {
 
   .banner-box {
     width: 100%;
@@ -123,6 +123,14 @@ a:hover {
 
   .nav-mobile li {
     display: none;
+  }
+
+  .item-img {
+    width: 40vw;
+  }
+
+  .business-info {
+    margin-left: 0px;
   }
 }
 
@@ -153,11 +161,6 @@ a:hover {
   .logo-header {
     margin-left: 1vw;
   }
-
-  .items {
-    margin: 3em 0vw;
-  }
-
 }
 
 /* Body content styling Flex*/
